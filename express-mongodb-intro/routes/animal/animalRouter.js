@@ -9,9 +9,9 @@ router.get('/', function(req, res, next) {
         if (err) {
             res
                 .status(500)
-                .json({ message: "success", foundAnimal});
+                .json({ message: "Something went wrong!", foundAnimal});
         } else {
-            res.json({ message: "success", foundAnimal });
+            res.json({ message: "Success", foundAnimal });
         }
     });
 });

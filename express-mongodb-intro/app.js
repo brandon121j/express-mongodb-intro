@@ -20,7 +20,6 @@ mongoose
   .catch((e) => {
     console.log(e)
   })
-  
 
 var app = express();
 
