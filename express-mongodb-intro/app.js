@@ -9,14 +9,14 @@ var usersRouter = require('./routes/users');
 var animalRouter = require('./routes/animal/animalRouter');
 
 mongoose
-  .connect("mongodb://localhost:27017/express-mongodb-database", {
+  .connect("mongodb://localhost:27017/express-mongodb-intro", {
     useNewURLParser: true,
     useUnifiedTopology: true
   })
   .then(() => {
     console.log("MongoDB CONNECTED");
   })
-  .catch(() => {
+  .catch((e) => {
     console.log(e)
   })
 
